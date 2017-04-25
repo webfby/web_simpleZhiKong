@@ -1,0 +1,121 @@
+@charset "UTF-8";
+
+.subpage-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Reposition the controls slightly */
+.carousel-control {
+    left: -12px;
+    width:2em;
+    height:2em;
+    line-height: 2em;
+    border-radius: 2em;
+    top: 50%;
+    margin-top: -2em;
+    font-size: 20px;
+    text-align: center;
+}
+
+.carousel-control.right {
+    right: -12px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    background-color: #c8c9cd;
+}
+
+/* Changes the position of the indicators */
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+    display: none;
+}
+
+/* Changes the colour of the indicators */
+.carousel-indicators li {
+    background: #c0c0c0;
+}
+
+.carousel-indicators .active {
+    background: #333333;
+}
+/*product*/
+.product-warp-width{
+	width: 90%; 
+	margin: 0 auto;
+}
+.product-list-msg a{ 
+	text-decoration: none; 
+	box-shadow:1px 3px 15px #cbcbcb; 
+	cursor: pointer;
+	position: relative;
+}
+.product-list-msg a:hover h3{
+	color: #018bd6; 
+}
+.product-list-msg a:hover{ 
+	border: 2px solid #a6d7f1;
+}
+.product-list-msg h3{ 
+	color: #666666;
+}
+.product-list-msg a.current{ 
+	border: 2px solid #a6d7f1;
+}
+.product-list-msg a.current h3{
+	color: #018bd6;
+}
+.product-list-msg a.current:after{
+        content:'';
+        position:absolute;
+        border:10px solid transparent;
+        border-top-color:#a6d7f1;
+        top:100%;
+        left:30%;
+}
+.product-profile{
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+.product-profile .product-ls{ 
+	width: 90%; 
+	margin: 0 auto;
+}
+.product-ls-title{
+	color:#018bd6 ; 
+	border-left: 3px solid #018bd6;
+	padding-left: 10px; 
+	font-size: 20px; 
+	margin-top: 40px;
+}
+.product-ls>p{
+	text-indent: 2em;
+	line-height: 28px;
+	letter-spacing: 1px;
+}
+.product-advantage{
+	margin: 20px 0; 
+	line-height: 28px; 
+	letter-spacing: 1px; 
+	padding-left:30px ;
+}
+.product-ls{
+	display: none;
+}
+.ls-show{
+	display: block;
+}
+.product-click.current h3{
+	color: #0088d2;
+}
+.loading-product{ 
+	display: block;
+	width: 27px;
+	margin: 0 auto;
+}

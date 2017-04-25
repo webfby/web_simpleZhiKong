@@ -1,0 +1,65 @@
+@charset "UTF-8";
+.contactUs{
+    color: #666;
+    line-height: 2em;
+    margin-bottom:40px;
+}
+#dituContent {
+    height: 560px;
+}
+/**/
+.contactUs .address{
+    padding-left:5px;
+}
+.contactUs .form-control {
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.form-control:focus {
+    border-color: #018bd6;
+    outline: 0;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+}
+
+.contactUs .control-label {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+}
+
+.contactUs .control-label i {
+    color: red;
+    padding-right: 3px;
+}
+
+.contactUs .btn-form {
+    width: 170px;
+    height: 40px;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #018bd6;
+    color: #018bd6;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 2px;
+    -webkit-transition: ease-in-out .15s;
+    -o-transition: ease-in-out .15s;
+    transition: ease-in-out .15s;
+}
+
+.contactUs .btn-form:hover, .contactUs .btn-form:focus {
+    color: #fff;
+    background: #018bd6;
+}
+/**/
+@media (max-width: 767px) {
+    #dituContent {
+        height: 250px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+</head>
+<body>
+<div id="allmap" style="height: 550px"></div>
+
+<script>
+    //百度地图API功能
+    function loadJScript() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "http://api.map.baidu.com/api?v=2.0&ak=kVBXX7MlfMkukl1DgtAjLsFX&callback=init";
+        document.body.appendChild(script);
+    }
+    function init(){
+        var sContent =
+            "<p style='margin:0;line-height:1.5;font-size:14px;'>地址：海淀区中关村大街18号中关村互联网</p>" +
+            "<p style='margin:0;line-height:1.5;font-size:14px; text-indent: 3em'>教育创新中心南侧1号</p>" +
+            "<p style='margin:0;line-height:1.5;font-size:14px;'>电话：400-083-4525</p>" +
+            "</div>";
+        var opts = {
+            width : 280,     // 信息窗口宽度
+            height: 95,     // 信息窗口高度
+            title : "<h4 style='margin: 2px 0;padding:0.2em 0; color#666;border-bottom: 2px solid #333;'>西普教育-北京总部</h4>" , // 信息窗口标题
+            enableMessage:false//设置允许信息窗发送短息
+        };
+        var map = new BMap.Map("allmap", {enableMapClick: false});  // 创建Map实例
+        var point = new BMap.Point(116.324164, 39.988805);   // 创建点坐标
+        var marker = new BMap.Marker(point);
+        var infoWindow = new BMap.InfoWindow(sContent,opts);  // 创建信息窗口对象
+        map.enableScrollWheelZoom(true);                 //启用滚轮放大缩小
+        map.centerAndZoom(point, 15);
+        map.addOverlay(marker);
+        marker.openInfoWindow(infoWindow);
+        marker.addEventListener("click", function () {
+            this.openInfoWindow(infoWindow);
+        });
+    }
+    window.onload = loadJScript;  //异步加载地图
+</script>
+</body>
+</html>

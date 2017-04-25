@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=PPnlF8fkS5tZkCAyRSrkc2Rz&s"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css"/>
+
+</head>
+<body>
+<div id="allmap" style="height: 500px;width:100%;overflow: hidden;"></div>
+<script type="text/javascript">
+    //百度地图API功能
+
+        var map = new BMap.Map('allmap', {enableMapClick: false});
+        var poi = new BMap.Point(116.324164, 39.988805);
+        map.centerAndZoom(poi, 18);
+        map.enableScrollWheelZoom();
+        var content = '<div style="margin:0;line-height:18px;padding:5px;color: #494d4d;font-size:13px;">' +
+            '<img src="http://www.simpleware.com.cn/common/images/logo.png" style="float:right;zoom:1;overflow:hidden;width:115px;margin-top:5px;margin-left:3px;"/>' +
+            '地址：中关村大街18号中关村互联网教育创新中心南侧1号<br/>电话：400-083-4525' +
+            '</div>';
+        //创建检索信息窗口对象
+        var searchInfoWindow = null;
+        searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+            title: "<b style='color: #333;font-size: 15px'>西普教育-北京总部</b>",      //标题
+            width: 300,             //宽度
+            height: 65,              //高度
+            panel: "panel",         //检索结果面板
+            enableAutoPan: true,     //自动平移
+            searchTypes: [
+                //BMAPLIB_TAB_SEARCH,   //周边检索
+                BMAPLIB_TAB_TO_HERE,  //到这里去
+                BMAPLIB_TAB_FROM_HERE //从这里出发
+            ]
+        });
+        var marker = new BMap.Marker(poi); //创建marker对象
+        // marker.enableDragging(); //marker可拖拽
+        searchInfoWindow.open(marker);
+        //
+        marker.addEventListener("click", function (e) {
+            searchInfoWindow.open(marker);
+        })
+        map.addOverlay(marker); //在地图中添加marker
+        //隐藏废弃的短信图标
+        document.getElementById('BMapLib_sendToPhone0').style.display = "none";
+
+</script>
+</body>
+</html>

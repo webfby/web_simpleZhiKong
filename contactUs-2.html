@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>西普智控官网</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles common -->
+    <link href="css/common.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/contactUs.css" rel="stylesheet">
+    <style type="text/css">
+        #allmap {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+    </style>
+</head>
+<body>
+<!--nav fixed-->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="Brand" src="images/xplogo_1x.png">
+                </a>
+            </div>
+        </div>
+        <!---->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!---->
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">业务领域</a></li>
+                <li><a href="#">行业资讯</a></li>
+                <li class="navbar-right"><a href="#">联系我们</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+<!--nav fixed end-->
+<!--banner-->
+<div class="subpage-banner">
+    <div class="item">
+        <img src="images/banner.jpg" style="width:100%" alt="S">
+    </div>
+</div>
+<!--banner end-->
+<!---->
+<div class="breadcrumb-wrap">
+    <div class="container breadcrumb-main">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+            <div class="navbar-header">
+                <a class="crumb" href="#">联系我们</a>
+            </div>
+        </div>
+        <!---->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <ul class="nav navbar-nav">
+                <!---->
+                <li><a href="#">公司介绍</a></li>
+                <li class="active"><a href="javascript:;">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--title-->
+
+
+<!---->
+<div class="container contactUs">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="address">
+                <p>
+                    西普智控
+                </p>
+                <p>
+                    地址：北京市海淀区中关村大街18号中关村互联网教育创新中心南侧1号
+                </p>
+                <p>
+                    邮编：100190
+                </p>
+                <p>服务热线:400-083-4525
+                </p>
+                <p>服务邮箱:service@simpleware.com.cn
+                </p>
+                <h5> 在线留言</h5>
+
+            </div>
+            <form class="form-horizontal" role="form">
+                <fieldset>
+
+
+                    <div class="form-group">
+
+                        <label class="col-sm-2 control-label" for="you_name">您的姓名:</label>
+
+                        <div class="col-sm-9">
+                            <input class="form-control" id="you_name" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="you_tel">联系电话:</label>
+
+                        <div class="col-sm-9">
+                            <input class="form-control" id="you_tel" type="text" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="you_c"> 公司名称:</label>
+
+                        <div class="col-sm-9">
+                            <input class="form-control" id="you_c" type="text" placeholder=" ">
+
+                            <p class="help-block valtype" style="display:none;"> 错误提示</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="you_title">留言主题:</label>
+
+                        <div class="col-sm-9">
+                            <input class="form-control" id="you_title" type="text" placeholder=" ">
+
+                            <p class="help-block valtype" style="display:none;"> 错误提示</p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label" for="you_meg"> 留言内容:</label>
+
+                        <div class="col-sm-9">
+                            <textarea class="form-control" id="you_meg" placeholder="最多输入1000字" maxlength="1000"
+                                      rows="6" cols="20"></textarea>
+
+                            <p class="help-block valtype" style="display:none;">提示信息说点什么吧</p>
+                        </div>
+                    </div>
+                    <div class="form-group  ">
+                        <label class="col-sm-2 control-label" for="validateCode">验证码
+
+                        </label>
+                        <div class="col-sm-9">
+                            <div class="row">
+                                <div class="col-sm-9 col-xs-9">
+                                    <input type="text" class="form-control"
+                                           id="validateCode" name="validateCode"
+                                           placeholder="輸入字符验证码">
+                                </div>
+                                <div class="col-sm-3 col-xs-3">
+                                    <img id="captcha" style="cursor: pointer"
+                                         src='images/gsdyi.jpg'>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="form-group btn-form-group text-center">
+
+                        <input type="button" value="提交留言" class="btn-form">
+
+                    </div>
+                </fieldset>
+            </form>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 map">
+
+            <!---->
+
+            <div id="allmap" style="height: 550px"></div>
+
+            <!---->
+        </div>
+
+    </div>
+    <!---->
+</div>
+<!--footer-->
+<footer class="main-footer">
+    <div class="container-fluid footer-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p style="color: #ffffff">西普智控</p>
+                    <p>服务热线：400-083-4525 服务邮箱：service@simpleware.com.cn</p>
+                    <p>
+                        Copyright © 2017 simpleware.com.cn保留所有权利 京ICP备15049788号-1
+                        <a target="_blank"
+                           href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020743"
+                           style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#b9b9b9;"><img
+                                src="images/police.png" style="float:left;">京公网安备 11010802020743号</a>
+                    </p>
+                </div>
+                <!---->
+                <div class="wechat-code">
+                    <span style="color: #ffffff">关注西普智控</span>
+                    <div><img src="images/wechat-QR-code.png" width="100"></div>
+                    <span>西普微信公众号</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+<!--footer end-->
+</body>
+<!--js-->
+<script type="text/javascript" src="js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!--end-->
+
+
+<script>
+    function loadJScript() {
+        var e = document.createElement("script");
+        e.type = "text/javascript", e.src = "https://api.map.baidu.com/api?v=2.0&ak=PPnlF8fkS5tZkCAyRSrkc2Rz&s=1&callback=init", document.body.appendChild(e)
+    }
+    function init() {
+
+
+        var e = new BMap.Map("allmap"), t = new BMap.Point(116.324164, 39.988805), n = new BMap.Marker(t);
+        e.addOverlay(n), e.centerAndZoom(t, 16);
+
+        var r = {
+
+            width: 290,
+            height: 80,
+            title: "<b  style='font-size: 18px;border-bottom: 2px solid #333; width: 100%;display: block'>西普教育-北京总部</b>",
+            enableMessage: !0,
+            message: " "
+        }, i = new BMap.InfoWindow("北京市海淀区中关村大街18号中关村互联网教育创新中心南侧1号", r);
+
+
+        e.openInfoWindow(i, t), n.addEventListener("click", function () {
+            e.openInfoWindow(i, t)
+        })
+    }
+
+
+    window.onload = loadJScript
+</script>
+</html>

@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+.carousel-control {
+    display: none;
+}
+
+.aboutUs {
+    line-height: 2em;
+    color: #666;
+    font-size: 16px;
+}
+
+.title-big {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.businessArea {
+    color: #018bd6;
+}
+
+.businessArea  h4{
+    padding-top: 10px;
+}
+
+.margin-large-bottom {
+    margin-bottom: 10px;
+}
+
+.newsMore-btn {
+    text-align: center;
+    display: inline-block;
+    padding: 5px 25px;
+    border-radius: 5px;
+    border: 1px solid #018bd6;
+    text-underline: none;
+    margin: 10px auto 40px;
+}
+
+.newsMore-btn:hover {
+    color: #fff;
+    background-color: #018bd6;
+}
